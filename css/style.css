@@ -1,0 +1,710 @@
+@font-face {
+  font-family: 'Cyberpunk Is Not Dead';
+  src: url(../fonts/CIND.otf);
+}
+
+@font-face {
+  font-family: 'Aldrich';
+  src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.ironland {
+  background-image: url(../img/ironland-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1430px;
+}
+
+.ironland-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ironland-info {
+  margin-top: 90px;
+}
+
+.ironland-img {
+  width: 740px;
+  position: relative;
+}
+
+.ironland-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ironland-img::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  left: 25%;
+  top: 65%;
+  background-image: url(../img/buttons/motaro-approves.png);
+  background-repeat: no-repeat;
+}
+
+.the-game {
+  margin-top: 50px;
+}
+
+.ironland-text {
+  margin-top: 10px;
+  max-width: 520px;
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+/* game */
+.game-inner {
+  margin-top: 65px;
+}
+
+.game-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 25px;
+}
+
+.game-items {
+  margin-top: 25px;
+}
+
+.game-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-item .game-img {
+  margin-right: 10px;
+}
+
+.game-title {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.game-subtitle {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+/* video */
+.video {
+  padding-top: 120px;
+  background: #1E1234;
+}
+
+.video-img {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* functions */
+.newfunctions {
+  padding-top: 80px;
+  background: #1E1234;
+}
+
+.functions-list {
+  margin-top: 30px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.functions-name {
+  max-width: 220px;
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+/* screenshot */
+.screenshots {
+  padding-top: 50px;
+  background: #1E1234;
+}
+
+.screenshots-photos {
+  margin: 0px 40px;
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 20px;
+}
+
+.screeshots-photo {
+  width: 520px;
+  height: 280px;
+}
+
+.screeshots-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* product */
+.product {
+  padding-top: 90px;
+  background: #1E1234;
+  position: relative;
+}
+
+.product::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 25%;
+  bottom: 0;
+  left: 72.5%;
+  height: 650px;
+  background-image: url(../img/product-img_right.png);
+  background-repeat: no-repeat;
+}
+
+td {
+  font-family: Aldrich;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  color: #FFFFFF;
+  width: 255px;
+  padding: 20px 15px;
+}
+
+td:nth-child(3) {
+  width: 180px;
+}
+
+td:nth-child(4) {
+  width: 200px;
+}
+
+/* tokens */
+.use-tokens {
+  padding-top: 115px;
+  background: #1E1234;
+}
+
+.tokens-grid {
+  margin-top: 55px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.tokens-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 30px;
+}
+
+.tokens-left .tokens-name:nth-child(2) {
+  margin-left: 30px;
+}
+
+.tokens-left .tokens-name:nth-child(1) {
+  margin-left: 60px;
+}
+
+.tokens-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 30px;
+}
+
+.tokens-right .tokens-name:nth-child(2) {
+  margin-left: 30px;
+}
+
+.tokens-right .tokens-name:nth-child(1) {
+  margin-left: 60px;
+}
+
+.tokens-name {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+/* monetezation */
+.monetezation {
+  padding-top: 50px;
+  background: #1E1234;
+}
+
+.monetezation-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.monetezetions-desc {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.monetezetions-desc h1 {
+  font-family: Aldrich;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #9C9A9A;
+}
+
+.monetezation-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 35px;
+}
+
+.monetezation-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 35px;
+}
+
+.monetezation-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 35px;
+}
+
+.monetezation-first p {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.monetezation-two p {
+  font-family: Aldrich;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.monetezation-three p {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+/* community */
+.community {
+  padding-top: 100px;
+  background: #1E1234;
+  padding-bottom: 180px;
+}
+
+.community-globus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* road-map */
+.roadmap {
+  background-image: url(../img/roadmap-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1430px;
+}
+
+.roadmap-button {
+  padding-top: 30px;
+}
+
+.roadmap-list {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.roadmap-title {
+  font-family: Cyberpunk Is Not Dead;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.roadmap-subtitle {
+  margin-top: 15px;
+  max-width: 200px;
+  font-family: Aldrich;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.roadmap-subtitle.custom {
+  max-width: 150px;
+}
+
+.qr-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .product::after {
+    display: none;
+  }
+  .product-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .ironland-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ironland-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ironland-img {
+    margin: 100px auto 0 auto;
+    width: initial;
+  }
+  .ironland-img::after {
+    background-size: 80%;
+  }
+  .video-img {
+    margin-top: 680px;
+  }
+  .video-img img {
+    width: 100%;
+  }
+  .video-button {
+    display: none;
+  }
+  .functions-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .functions-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .screenshots-photos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .screeshots-photo {
+    height: initial;
+    width: initial;
+    margin: 0 auto;
+  }
+  .tokens-right .tokens-name:nth-child(1) {
+    margin: 0;
+  }
+  .tokens-right .tokens-name:nth-child(2) {
+    margin: 0;
+  }
+  .tokens-left .tokens-name:nth-child(1) {
+    margin: 0;
+  }
+  .tokens-left .tokens-name:nth-child(2) {
+    margin: 0;
+  }
+  .monetezation-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 100px;
+  }
+  .monetezetions-desc {
+    margin: 45px 30px 0px 30px;
+  }
+  .community-globus img {
+    width: 100%;
+  }
+  .roadmap-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+  .roadmap-item {
+    margin: 0 auto;
+  }
+  .roadmap-row {
+    margin: 0px 20px;
+  }
+  .qr-code img {
+    max-width: 580px;
+    width: 100%;
+  }
+  .tokens-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 55px 20px 0px 20px;
+  }
+  .tokens-left {
+    margin: 0 auto;
+  }
+  .tokens-right {
+    margin: 0px 30px;
+  }
+  .tokens-name {
+    font-size: 35px;
+  }
+  .product-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  td {
+    font-size: 20px;
+  }
+  .product {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tokens-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .tokens-left {
+    margin: 0px auto;
+  }
+  .tokens-right {
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .tokens-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .tokens-left {
+    margin: 0px 30px;
+  }
+  .tokens-right {
+    margin: 0px 30px;
+  }
+  .tokens-name {
+    font-size: 26px;
+  }
+  .roadmap-button img {
+    width: 100%;
+  }
+  .community-button img {
+    width: 100%;
+  }
+  .monetezation-button img {
+    width: 100%;
+  }
+  .tokens-button img {
+    width: 100%;
+  }
+  .product-button img {
+    width: 100%;
+  }
+  .screenshots-button img {
+    width: 100%;
+  }
+  .roadmap-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .tokens-grid {
+    margin: 55px 0px 0px 0px;
+  }
+  .functions-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .functions-button img {
+    width: 100%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .the-game img {
+    width: 100%;
+  }
+  .ironland-text {
+    font-size: 20px;
+  }
+  .game-mods img {
+    width: 100%;
+  }
+  .game-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .video-img {
+    margin-top: 800px;
+  }
+}
